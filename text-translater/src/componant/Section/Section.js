@@ -26,12 +26,12 @@ const Section = (prop) => {
       <div className="flex justify-center items-center flex-col gap-5">
         <div className="flex gap-6 items-center">
           <div className="flex gap-5 justify-center  items-center ">
-            <label className="inline-block text-base font-medium text-blue-500  mr-4  bg-gray-300 px-5 py-2 rounded-sm">
+            <label className="inline-block text-base font-medium text-red-500  mr-4  bg-gray-300 px-5 py-2 rounded-sm">
               {" "}
               Select Source Language
             </label>
             <select
-              className="border-2 py-1.5 px-1.5 "
+              className="border-2 py-1.5 px-1.5 bg-transparent font-bold text-sky-500"
               id="languageSource"
               onChange={handleSourceLanguage}
             >
@@ -155,12 +155,12 @@ const Section = (prop) => {
           </div>
 
           <div className="flex gap-5 items-center">
-            <label className="inline-block text-base font-medium text-blue-500  mr-4 bg-gray-300 px-5 py-2 rounded-sm">
+            <label className="inline-block text-base font-medium  text-red-500  mr-4 bg-gray-300 px-5 py-2 rounded-sm">
               {" "}
               Select Target Language
             </label>
             <select
-              className="border-2 py-1.5  px-1.5"
+              className="border-2 py-1.5  px-1.5 bg-transparent font-bold text-sky-500"
               id="languageTarget"
               onChange={handleTargetLanguage}
             >
@@ -287,14 +287,14 @@ const Section = (prop) => {
         <div>
           <textarea
             rows="5"
-            className="border-2 rounded-md min-w-96 p-5"
+            className="border-2 rounded-md min-w-96 p-5 bg-transparent font-bold text-sky-500 text-xl backdrop-blur-sm"
             placeholder="Please enter text ..."
             onChange={(e) => sourcetextValue(e)}
           ></textarea>
         </div>
         <div className="flex flex-col m-6 gap-6">
           <button
-            className="border-green-400 border-2 hover:bg-green-400  px-6 py-2 font-serif font-bold rounded-lg"
+            className="border-green-400 border-2 hover:bg-green-400  px-6 py-2 font-serif font-bold rounded-lg "
             type="button"
             onClick={convertTarget}
           >
@@ -302,8 +302,8 @@ const Section = (prop) => {
           </button>
           <textarea
             rows="5"
-            className="border-2 rounded-md min-w-96 p-5"
-            placeholder=" click on convert button ..."
+            className="border-2 rounded-md min-w-96 p-5 bg-transparent font-bold text-yellow-300 text-xl backdrop-blur-lg"
+            placeholder="Click on Convert Button ..."
             value={prop.targetText}
           ></textarea>
         </div>

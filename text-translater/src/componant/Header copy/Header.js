@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <div className='font-serif flex flex-row justify-between px-3 py-2 bg-gray-300 items-center' >
           <div>
-              <span>Rishi Translator</span>
+              <span className='text-2xl font-bold font-sans'>Rishi Translator</span>
       </div>
       
           <div className='flex gap-3'>

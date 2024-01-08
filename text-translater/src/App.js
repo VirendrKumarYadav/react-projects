@@ -1,4 +1,5 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
+import './App.css'
 import axios from "axios";
 import Footer from "./componant/Footer copy/Footer";
 import Header from "./componant/Header copy/Header";
@@ -46,7 +47,7 @@ const [sourceText, setSourceText] = useState(" howggg");
 
 
   return (
-    <div  className="h-screen w-screen flex flex-col justify-between">
+    <div id="app"  className="h-screen w-screen flex flex-col justify-between">
       <Header />
       <Section sourceText={(e) => (setSourceText(e))} targetText={targetText} setSouceLanuage={(e) => (setSource(e))} setTargetLanuage={(e) => (setTarget(e))} convertToTargetLang={convertToTargetLang} />
       <Footer />
