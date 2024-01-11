@@ -7,7 +7,7 @@ import Section from "./componant/Section/Section";
 
 const App = () => {
 const [targetText,setTargetText] = useState("")
-const [sourceText, setSourceText] = useState(" howggg");
+const [sourceText, setSourceText] = useState("NoText");
 
   const [source,setSource] = useState("en");
    const [target,setTarget] = useState("id");
