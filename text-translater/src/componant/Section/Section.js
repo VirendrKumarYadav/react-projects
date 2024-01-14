@@ -2,16 +2,15 @@ import React from "react";
 
 const Section = (prop) => {
   const convertTarget = () => {
-    console.log(prop.targetText);
-    if (prop.targetText=="NoText") {
-      console.log(prop.targetText);
-    
-    } else if(prop.targetText!=""){
-       prop.convertToTargetLang();
+    console.log(prop.sourceText_value);
+    if (
+      prop.sourceText_value == "NoText" ||
+      prop.sourceText_value == ""
+    ) {
+      alert("Opps! \nPlease Enter Some Text...  ");
     } else {
-       alert("Opps! \nPlease Enter Some Text...  ");
+      prop.convertToTargetLang();
     }
-   
   };
 
   const handleSourceLanguage = () => {

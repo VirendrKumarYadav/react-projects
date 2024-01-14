@@ -1,18 +1,15 @@
 import React, { useState } from "react";
-import './App.css'
+import "./App.css";
 import axios from "axios";
 import Footer from "./componant/Footer copy/Footer";
 import Header from "./componant/Header copy/Header";
 import Section from "./componant/Section/Section";
 
 const App = () => {
-const [targetText,setTargetText] = useState("")
-const [sourceText, setSourceText] = useState("NoText");
-
-  const [source,setSource] = useState("en");
-   const [target,setTarget] = useState("id");
-
-
+  const [targetText, setTargetText] = useState("");
+  const [sourceText, setSourceText] = useState("NoText");
+  const [source, setSource] = useState("en");
+  const [target, setTarget] = useState("id");
   const postApi = async () => {
     const url = "https://text-translator2.p.rapidapi.com/translate";
     const apikey = "a87ea0f1a7mshab123e16f05bfffp18c53ajsnf346c549d3a4";
@@ -41,18 +38,24 @@ const [sourceText, setSourceText] = useState("NoText");
     }
   };
 
- const convertToTargetLang = () => {
-   postApi();
-}
-
+  const convertToTargetLang = () => {
+    postApi();
+  };
 
   return (
-    <div id="app"  className="h-screen w-screen flex flex-col justify-between">
+    <div id="app" className="h-screen w-screen flex flex-col justify-between">
       <Header />
-      <Section sourceText={(e) => (setSourceText(e))} targetText={targetText} setSouceLanuage={(e) => (setSource(e))} setTargetLanuage={(e) => (setTarget(e))} convertToTargetLang={convertToTargetLang} />
+      <Section
+        sourceText={(e) => setSourceText(e)}
+        targetText={targetText}
+        setSouceLanuage={(e) => setSource(e)}
+        setTargetLanuage={(e) => setTarget(e)}
+        convertToTargetLang={convertToTargetLang}
+        sourceText_value={ sourceText}
+      />
       <Footer />
     </div>
   );
-}
+};
 
-export default App
+export default App;

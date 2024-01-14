@@ -5,6 +5,8 @@ import Food from './componant/Food'
 import Home from './componant/Home'
 import Resturent from './componant/Resturent'
 import Settings from './componant/Settings/Settings'
+import Footer from './componant/Footer/Footer'
+import Header from './componant/Header/Header'
 import { createBrowserRouter,RouterProvider } from 'react-router-dom'
 
 const App = () => {
@@ -46,24 +48,15 @@ const App = () => {
       //     element: <Food />,
       //   },
       // ],
-      
     },
   ]);
-
+  // <Header />
+  //  <Footer />;
   return (
-    <div> 
-      {
-      // <About />
-      // <Contect />
-      // <Food />
-      // <Home />
-      // <Resturent />
-        
-      }  
-
+    <div>
       <RouterProvider router={routs}></RouterProvider>
     </div>
-  )
+  );
 }
 
 export default App
