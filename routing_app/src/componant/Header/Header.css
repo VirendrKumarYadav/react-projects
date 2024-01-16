@@ -4,7 +4,7 @@
     justify-content: space-around;
     align-items: center;
     /* border:2px solid #000000; */
-    background-color: #ab8b9b;
+    background-color: #bda8b2;
     color: #541741;
 }
 ul{
@@ -50,4 +50,7 @@ h2{
   }
   #getStarted>span{
     font-size: 1.5rem;
+  }
+  a{
+    text-shadow: 1px 1px 1px #000000;
   }

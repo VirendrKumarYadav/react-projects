@@ -5,13 +5,13 @@ import "react-toastify/dist/ReactToastify.css";
 const AddNewData = () => {
   const [addbtnClk, setAddBtnClk] = useState(false);
   const [dataToStore, setDataToStore] = useState(
-    {
+    [{
       name:"",
       dob:"",
       adhar:"",
       mobile:"",
       age:"",
-    },
+    }],
   );
 
   useEffect(() => {

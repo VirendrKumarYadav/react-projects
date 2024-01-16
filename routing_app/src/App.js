@@ -5,15 +5,14 @@ import Food from './componant/Food'
 import Home from './componant/Home'
 import Resturent from './componant/Resturent'
 import Settings from './componant/Settings/Settings'
-import Footer from './componant/Footer/Footer'
-import Header from './componant/Header/Header'
-import { createBrowserRouter,RouterProvider } from 'react-router-dom'
+import { createBrowserRouter,RouterProvider,Link } from 'react-router-dom'
 
 const App = () => {
+
   const routs = createBrowserRouter([
     {
       path: "/",
-      element: <Home />,
+      element: <Home/>,
     },
     {
       path: "/About",
@@ -34,24 +33,10 @@ const App = () => {
     {
       path: "/settings",
       element: <Settings />,
-      // children: [
-      //   {
-      //     path: "/About",
-      //     element: <About />,
-      //   },
-      //   {
-      //     path: "/Contect",
-      //     element: <Contect />,
-      //   },
-      //   {
-      //     path: "/Food",
-      //     element: <Food />,
-      //   },
-      // ],
+      
     },
   ]);
-  // <Header />
-  //  <Footer />;
+  
   return (
     <div>
       <RouterProvider router={routs}></RouterProvider>

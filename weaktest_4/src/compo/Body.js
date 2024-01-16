@@ -24,7 +24,6 @@ const Body = () => {
           name="Retrieve Information"
           onclickBtn={retrieveClk_fun}
         ></Button>
-
       </div>
 
       <div className="p-8 border-dotted border-2 border-blue-400 bg-cyan-200">

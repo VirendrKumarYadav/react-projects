@@ -1,33 +1,54 @@
-.foot{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
-    padding: 2rem;
-    background-color: #770f38ea;
-    color: white;
-  }
-  .foot ul{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-  }
-  .foot p{
-    width: 80%;
-  }
-  a{
-    padding: 10px;
-    font-weight: bold;
-  }
-  a:hover{
-    color: blue;
-    cursor: pointer;
-  
-  }
-  button:hover{
-    background-color: blanchedalmond;
-    color: black;
-   
-  }
+.foot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 2rem;
+  background-color: #770f38ea;
+  color: white;
+}
+.foot ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.foot p {
+  width: 80%;
+}
+a {
+  padding: 10px;
+  font-weight: bold;
+}
+a:hover {
+  color: blue;
+  cursor: pointer;
+}
+button:hover {
+  background-color: blanchedalmond;
+  color: black;
+}
+.contect_bg {
+  background-image: url("https://images.unsplash.com/photo-1505935428862-770b6f24f629?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Zm9vZCUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D");
+  background-size: cover;
+  height: 40vh;
+  width: 99vw;
+  background-repeat: no-repeat;
+}
+
+.about_bg {
+  background-image: url("https://media.istockphoto.com/id/1426025866/photo/business-team-and-corporate-workers-with-work-support-career-community-and-collaboration.webp?b=1&s=170667a&w=0&k=20&c=bj8Pxav0mFV5D7Z0OZ6LrXzTmsczS251Fs5bD3JjuSE=");
+  background-size: cover;
+  height: 40vh;
+  width: 99vw;
+  background-repeat: no-repeat;
+}
+
+.food_bg{
+    background-image: url("https://images.unsplash.com/photo-1516865131505-4dabf2efc692?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZGVsZWNpb3VzJTIwZm9vZHN8ZW58MHx8MHx8fDA%3D");
+  background-size: cover;
+  height: 50vh;
+  width: 99vw;
+  background-repeat: no-repeat;
+}

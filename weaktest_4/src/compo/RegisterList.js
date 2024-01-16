@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from "react";
 const DataList = () => {
-  const [myObject, setMyObject] = useState(JSON.parse(localStorage.getItem("regitered")));
+  const [myObject, setMyObject] = useState(
+    JSON.parse(localStorage.getItem("regitered"))==null
+      ? []
+      : JSON.parse(localStorage.getItem("regitered"))
+  );
 
   useEffect(() => {
     const storedString = localStorage.getItem("regitered");
