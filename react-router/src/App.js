@@ -3,7 +3,11 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from './compo/Home'
 import About from './compo/About'
 
+ 
+
 const App = () => {
+
+ 
   const router = createBrowserRouter([
     {
       path: "/",

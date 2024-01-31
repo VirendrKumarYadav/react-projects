@@ -1,16 +1,32 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-
+import { Link, useNavigate } from "react-router-dom";
+import { useAuthContext } from "./AuthProvider";
+import {memo} from "react"
 
 const LoginPage = () => {
+  const navigate = useNavigate();
+  const auth = useAuthContext();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
     
     
-  const handleLogin = (e) => {
-    e.preventDefault();
+  const handleLogin = async (e) => {
+    console.log(email,password);
+    try {
+      const response = await auth.signIn(email, password);
+      console.log(response);
+      // Signed in
+      alert("Sucessfully Signed In.");
 
+      // ...
+      // navigate("/home");
+    } catch (err) {
+      console.error(err);
+    }
+
+   
+    e.preventDefault();
     console.log("Login clicked. Email:", email, "Password:", password);
     };
     
@@ -56,7 +72,6 @@ const LoginPage = () => {
               required
             />
           </div>
-
           <button
             type="submit"
             className="w-full bg-indigo-500 text-white py-2 px-4 rounded-md hover:bg-indigo-600 focus:outline-none focus:bg-indigo-600"
@@ -74,8 +89,9 @@ const LoginPage = () => {
           </Link>{" "}
         </p>
       </div>
+  
     </div>
   );
 };
 
-export default LoginPage;
+export default memo(LoginPage);

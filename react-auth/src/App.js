@@ -2,9 +2,10 @@ import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Login from "./compo/LoginPage";
 import Signup from "./compo/Signup";
+import Home from "./compo/HomePage";
 import AuthProvider from "./compo/AuthProvider";
 import firebase from './firebase'
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function App() {
@@ -16,6 +17,10 @@ function App() {
     {
       path: "/Signup",
       element: <Signup />,
+    },
+    {
+      path: "/home",
+      element: <Home />,
     },
   ]);
 
